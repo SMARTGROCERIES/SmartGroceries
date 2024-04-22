@@ -8,7 +8,7 @@ const FirstPage = () => {
   useEffect(() => {
     const timer = setTimeout(() => {
       setIsVisible(false);
-    }, 1000); // 3000 milliseconds = 3 seconds
+    }, 1000); // 1000 milliseconds = 1 seconds
 
     return () => clearTimeout(timer);
   }, []);
@@ -32,7 +32,7 @@ const FirstPage = () => {
         <div
           style={{
             display: "flex",
-            justifyContent: "center",
+            justifyContent: "flex-end",
             alignItems: "center",
             flexDirection: "column",
             height: "100vh",
@@ -42,13 +42,25 @@ const FirstPage = () => {
             backgroundPosition: "center",
           }}
         >
-          <div div className="flex flex-col items-center">
+          <div div className="flex flex-col items-center gap-5">
             <div style={{ borderRadius: "50%", backgroundColor: "#fff1ca" }}>
               <Logo height={"91px"} width={"91px"} />
             </div>
-           <div>
-           <ButtonLongWidth bgColor={"bg-[#53b175]"} width={"w-[300px]"} text={"Get Started"} textColor={"text-white"}/>
-           </div>
+            <div className="text-[#ffff] font-bold text-5xl flex flex-col items-center">
+              <span className="border-solid border-3 border-black">Welcome</span><span className="border-solid border-3 border-black">to our store</span>
+            </div>
+            <div className="text-[21px] leading-[94%] text-center text-[#ffff] font-bold">
+            Ger your groceries in as fast as one hour
+            </div>
+            <div>
+              <ButtonLongWidth
+                bgColor={"bg-[#53b175]"}
+                width={"w-[300px]"}
+                text={"Get Started"}
+                textColor={"text-white"}
+              />
+            </div>
+            <div className="h-6"></div>
           </div>
         </div>
       )}
