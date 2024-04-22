@@ -1,3 +1,4 @@
+import ButtonLongWidth from "../../Components/Buttons/ButtonLongWidth/ButtonLongWidth.jsx";
 import Logo from "../../Utils/Logo/Logo.jsx";
 import React, { useState, useEffect } from "react";
 
@@ -33,6 +34,7 @@ const FirstPage = () => {
             display: "flex",
             justifyContent: "center",
             alignItems: "center",
+            flexDirection: "column",
             height: "100vh",
             width: "100vw",
             backgroundImage: `url("https://i.pinimg.com/originals/2b/33/21/2b33214fa0b8e8197f11ce2c43136dba.jpg")`,
@@ -40,10 +42,13 @@ const FirstPage = () => {
             backgroundPosition: "center",
           }}
         >
-          <div
-            style={{ borderRadius: "50%", backgroundColor: "#fff1ca" }}
-          >
-            <Logo height={"91px"} width={"91px"} />
+          <div div className="flex flex-col items-center">
+            <div style={{ borderRadius: "50%", backgroundColor: "#fff1ca" }}>
+              <Logo height={"91px"} width={"91px"} />
+            </div>
+           <div>
+           <ButtonLongWidth bgColor={"bg-[#53b175]"} width={"w-[300px]"} text={"Get Started"} textColor={"text-white"}/>
+           </div>
           </div>
         </div>
       )}
