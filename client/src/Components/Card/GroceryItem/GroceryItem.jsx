@@ -7,11 +7,11 @@ const BuyItem = ({ groceryName, price, image, quantity, stock }) => {
     <>
       <div className="p-3 border-[1px] border-[solid] border-[#e2e2e2] rounded-[18px] w-[173px] [box-shadow:0_6px_12px_0_rgba(0,_0,_0,_0)]">
         {stock ? (
-          <span className="text-[rgb(1,_6,_1)] bg-[rgb(27,_212,_18)] text-[medium] float-left relative left-[36px] h-[21px] w-[61px] flex justify-center items-center font-medium rounded-tl-none rounded-br-none rounded-tr-[18px] rounded-bl-none">
+          <span className="text-[rgb(1,_6,_1)] bg-[rgb(27,_212,_18)] text-[medium] float-left relative left-[99px] h-[21px] w-[61px] flex justify-center items-center font-medium rounded-tl-none rounded-br-none rounded-tr-[18px] rounded-bl-none">
             In Stock
           </span>
         ) : (
-          <span className="text-[rgb(1,_6,_1)] bg-[rgb(212,_18,_18)] text-[medium] float-left relative left-[21px] h-[21px] w-[91px] flex justify-center items-center font-medium rounded-tl-none rounded-br-none rounded-tr-[18px] rounded-bl-none">
+          <span className="text-[rgb(1,_6,_1)] bg-[rgb(212,_18,_18)] text-[medium] float-left relative left-[69px] h-[21px] w-[91px] flex justify-center items-center font-medium rounded-tl-none rounded-br-none rounded-tr-[18px] rounded-bl-none">
             Stock Over
           </span>
         )}
