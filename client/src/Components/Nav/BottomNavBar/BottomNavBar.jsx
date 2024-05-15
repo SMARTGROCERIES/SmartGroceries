@@ -9,7 +9,7 @@ const BottomNavBar = () => {
 
   return (
     <>
-      <div className="flex justify-between p-3 bottom-0 fixed w-[100vw] lg:hidden">
+      <div className="flex justify-between p-3 bottom-0 fixed w-[100vw] bg-[azure] lg:hidden">
         <div
           className="flex flex-col justify-center items-center"
           onClick={() => handelActive("shop")}
