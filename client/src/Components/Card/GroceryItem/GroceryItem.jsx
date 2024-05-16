@@ -36,7 +36,7 @@ const BuyItem = ({ groceryName, price, image, quantity, stock }) => {
           </span>
           <div
             style={{
-              backgroundImage: `url(${addToCartIcon})`,
+              backgroundImage: `url("${addToCartIcon}")`,
               backgroundSize: "contain",
               backgroundPosition: "center",
               backgroundRepeat: "no-repeat",

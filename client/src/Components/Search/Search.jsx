@@ -8,7 +8,7 @@ const Search = () => {
         <input
           placeholder="Search Store..."
           style={{
-            backgroundImage: `url(${searchIcon})`,
+            backgroundImage: `url("${searchIcon}")`,
             backgroundSize: "31px",
           }}
           className="rounded-[15px] w-[80vw] h-[51px] bg-[#f2f3f2] bg-no-repeat bg-contain p-7 bg-left pl-11
