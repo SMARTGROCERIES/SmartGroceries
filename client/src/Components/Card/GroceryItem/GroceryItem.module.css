@@ -1,0 +1,79 @@
+.card {
+    border-radius: 18px;
+    min-width: 131px;
+    max-width: 131px;
+    height: 239px;
+    box-shadow: 0 6px 12px 0 rgba(0, 0, 0, 0);
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.text {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 137%;
+    letter-spacing: 0.01em;
+    text-align: center;
+    color: #181725;
+}
+
+.text2{
+    font-size: 16px;
+    line-height: 137%;
+    letter-spacing: 0.01em;
+    text-align: center;
+    color: grey; 
+}
+
+.textPrice{
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 137%;
+    letter-spacing: 0.01em;
+    text-align: center;
+    color: #181725;
+
+    width: 111px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.inStock{
+    color: rgb(1, 6, 1);
+    background-color: rgb(27, 212, 18);
+    font-size: medium;
+    float: left;
+    position: relative;
+    left: 36px;
+    height: 21px;
+    width: 61px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 500;
+
+    border-radius: 0px 18px 0px 0px;
+}
+
+.outStock{
+    color: rgb(1, 6, 1);
+    background-color: rgb(212, 18, 18);
+    font-size: medium;
+    float: left;
+    position: relative;
+    left: 21px;
+    height: 21px;
+    width: 91px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 500;
+
+    border-radius: 0px 18px 0px 0px;
+}

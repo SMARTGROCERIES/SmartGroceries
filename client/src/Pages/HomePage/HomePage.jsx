@@ -33,6 +33,7 @@ const HomePage = () => {
         <div>
           <CarouselWithContent />
         </div>
+        <br />
         <div className="flex w-[100vw] gap-6 flex-wrap justify-center">
           {groceryItem.map((item, indexId) => {
             return (

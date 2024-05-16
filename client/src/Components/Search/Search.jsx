@@ -12,7 +12,7 @@ const Search = () => {
             backgroundSize: "31px",
           }}
           className="rounded-[15px] w-[80vw] h-[51px] bg-[#f2f3f2] bg-no-repeat bg-contain p-7 bg-left pl-11
-           text-[24px] text-[#7c7c7c]
+           text-[24px] text-[#7c7c7c] border-[#140707] border-[3px]
           "
         />
       </div>
