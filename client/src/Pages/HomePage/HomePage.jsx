@@ -4,6 +4,7 @@ import CarouselWithContent from "../../Components/Carousel/Carousel";
 import TopNavBar from "../../Components/Nav/TopNavBar/TopNavBar";
 import BottomNavBar from "../../Components/Nav/BottomNavBar/BottomNavBar";
 import GroceryItem from "../../Components/Card/GroceryItem/GroceryItem";
+import Home from "../../Components/Home/Home";
 
 const HomePage = () => {
   const [groceryItem, setGroceryItem] = useState([]);
@@ -26,27 +27,32 @@ const HomePage = () => {
   return (
     <>
       <div>
-        <div>
+        <br />
+        <div className="bg-[azure] w-[100vw]">
           <TopNavBar />
         </div>
-        <br />
         <div>
-          <CarouselWithContent />
-        </div>
-        <br />
-        <div className="flex w-[100vw] gap-6 flex-wrap justify-center">
-          {groceryItem.map((item, indexId) => {
-            return (
-              <GroceryItem
-                key={indexId}
-                groceryName={item.name}
-                price={item.price}
-                image={item.image}
-                quantity={item.quantity}
-                stock={item.stock}
-              />
-            );
-          })}
+          <Home>
+            <div className="h-[91px]"></div>
+            <div>
+              <CarouselWithContent />
+            </div>
+            <br />
+            <div className="flex w-[100vw] gap-6 flex-wrap justify-center">
+              {groceryItem.map((item, indexId) => {
+                return (
+                  <GroceryItem
+                    key={indexId}
+                    groceryName={item.name}
+                    price={item.price}
+                    image={item.image}
+                    quantity={item.quantity}
+                    stock={item.stock}
+                  />
+                );
+              })}
+            </div>
+          </Home>
         </div>
         <div>
           <BottomNavBar />

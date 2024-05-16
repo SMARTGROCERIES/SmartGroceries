@@ -3,7 +3,7 @@ import { Carousel, Typography, Button } from "@material-tailwind/react";
 const CarouselWithContent = () => {
   return (
     <Carousel
-      className="rounded-xl"
+      className="rounded-xl z-[-9999999]"
       autoplay={true}
       loop={true}
       prevArrow={false}
