@@ -1,6 +1,6 @@
 import React from "react";
 import smartGroceriesLogo from "../../../assets/smartGroceriesLogo.png";
-import addToCartIcon from "../../../assets/my_assets/addToCart.svg";
+import addToCartIcon from "../../../assets/myassets/addToCart.svg";
 
 const BuyItem = ({ groceryName, price, image, quantity, stock }) => {
   return (
