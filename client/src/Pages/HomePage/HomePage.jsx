@@ -11,7 +11,7 @@ const HomePage = () => {
   useEffect(
     () => {
       axios
-        .get("http://localhost:5173/src/assets/fruitsNveg.json")
+        .get("https://smartgroceries.nakprc.com/src/assets/fruitsNveg.json")
         .then((response) => {
           setGroceryItem(response.data);
         })
