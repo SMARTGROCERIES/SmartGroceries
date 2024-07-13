@@ -8,7 +8,11 @@ const GroceryItem = ({ groceryName, price, image, quantity, stock }) => {
     <>
       <div
         className={StyleGroceryItem.card}
-        style={{ border: "2px solid coral", background: "#ffff" }}
+        style={{
+          border: "2px solid coral",
+          background: "#ffff",
+          zIndex: "-10",
+        }}
       >
         {stock ? (
           <span className={StyleGroceryItem.inStock}>In Stock</span>

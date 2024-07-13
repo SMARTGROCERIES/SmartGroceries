@@ -1,6 +1,8 @@
 import React from "react";
 import Search from "../../Search/Search";
 import SmartGroceriesLogo from "../../../assets/smartGroceriesLogo.png";
+import userDesktopIcon from "../../../assets/myassets/userDesktop.svg";
+import cartDesktopIcon from "../../../assets/myassets/cartDesktop.svg";
 
 const TopNavBar = () => {
   return (
@@ -12,11 +14,25 @@ const TopNavBar = () => {
             <img
               src={SmartGroceriesLogo}
               alt="SmartGroceriesLogo"
-              className="min-h-[51px] min-w-[51px] max-h-[51px] max-w-[51px]"
+              className="min-h-[51px] min-w-[51px] max-h-[51px] max-w-[51px] bg-white rounded-full"
             />
           </div>
           <div>
             <Search />
+          </div>
+          <div>
+            <img
+              src={userDesktopIcon}
+              alt="userDesktopIcon"
+              className="hidden md:block min-h-[51px] min-w-[51px] max-h-[51px] max-w-[51px] bg-white rounded-full"
+            />
+          </div>
+          <div>
+            <img
+              src={cartDesktopIcon}
+              alt="cartDesktopIcon"
+              className="hidden md:block min-h-[51px] min-w-[51px] max-h-[51px] max-w-[51px] bg-white rounded-full"
+            />
           </div>
         </div>{" "}
       </div>

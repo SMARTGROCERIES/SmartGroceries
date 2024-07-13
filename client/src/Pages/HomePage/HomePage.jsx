@@ -41,7 +41,7 @@ const HomePage = () => {
             <div className="pl-6 font-bold text-[21px]">
               Popular Grocery Products
             </div>
-            <div className="flex w-[100vw] gap-6 flex-nowrap justify-center overflow-x-scroll pl-16">
+            <div className="flex w-[100vw] gap-6 flex-nowrap justify-center overflow-x-scroll ">
               {groceryItem.map((item, indexId) => {
                 return (
                   <GroceryItem
@@ -57,7 +57,7 @@ const HomePage = () => {
             </div>
             <br />
             <div className="pl-6 font-bold text-[21px]">Fruits</div>
-            <div className="flex w-[100vw] gap-6 flex-nowrap justify-center overflow-x-scroll pl-16">
+            <div className="flex w-[100vw] gap-6 flex-nowrap justify-center overflow-x-scroll ">
               {groceryItem.map((item, indexId) => {
                 return (
                   <GroceryItem
@@ -73,7 +73,7 @@ const HomePage = () => {
             </div>
             <br />
             <div className="pl-6 font-bold text-[21px]">Vegetables</div>
-            <div className="flex w-[100vw] gap-6 flex-nowrap justify-center overflow-x-scroll pl-16">
+            <div className="flex w-[100vw] gap-6 flex-nowrap justify-center overflow-x-scroll ">
               {groceryItem.map((item, indexId) => {
                 return (
                   <GroceryItem
@@ -89,7 +89,7 @@ const HomePage = () => {
             </div>
             <br />
             <div className="pl-6 font-bold text-[21px]">Dairy Products</div>
-            <div className="flex w-[100vw] gap-6 flex-nowrap justify-center overflow-x-scroll pl-16">
+            <div className="flex w-[100vw] gap-6 flex-nowrap justify-center overflow-x-scroll ">
               {groceryItem.map((item, indexId) => {
                 return (
                   <GroceryItem
