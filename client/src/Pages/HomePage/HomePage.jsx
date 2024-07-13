@@ -38,7 +38,58 @@ const HomePage = () => {
               <CarouselWithContent />
             </div>
             <br />
-            <div className="flex w-[100vw] gap-6 flex-wrap justify-center">
+            <div className="pl-6 font-bold text-[21px]">
+              Popular Grocery Products
+            </div>
+            <div className="flex w-[100vw] gap-6 flex-nowrap justify-center overflow-x-scroll pl-16">
+              {groceryItem.map((item, indexId) => {
+                return (
+                  <GroceryItem
+                    key={indexId}
+                    groceryName={item.name}
+                    price={item.price}
+                    image={item.image}
+                    quantity={item.quantity}
+                    stock={item.stock}
+                  />
+                );
+              })}
+            </div>
+            <br />
+            <div className="pl-6 font-bold text-[21px]">Fruits</div>
+            <div className="flex w-[100vw] gap-6 flex-nowrap justify-center overflow-x-scroll pl-16">
+              {groceryItem.map((item, indexId) => {
+                return (
+                  <GroceryItem
+                    key={indexId}
+                    groceryName={item.name}
+                    price={item.price}
+                    image={item.image}
+                    quantity={item.quantity}
+                    stock={item.stock}
+                  />
+                );
+              })}
+            </div>
+            <br />
+            <div className="pl-6 font-bold text-[21px]">Vegetables</div>
+            <div className="flex w-[100vw] gap-6 flex-nowrap justify-center overflow-x-scroll pl-16">
+              {groceryItem.map((item, indexId) => {
+                return (
+                  <GroceryItem
+                    key={indexId}
+                    groceryName={item.name}
+                    price={item.price}
+                    image={item.image}
+                    quantity={item.quantity}
+                    stock={item.stock}
+                  />
+                );
+              })}
+            </div>
+            <br />
+            <div className="pl-6 font-bold text-[21px]">Dairy Products</div>
+            <div className="flex w-[100vw] gap-6 flex-nowrap justify-center overflow-x-scroll pl-16">
               {groceryItem.map((item, indexId) => {
                 return (
                   <GroceryItem
