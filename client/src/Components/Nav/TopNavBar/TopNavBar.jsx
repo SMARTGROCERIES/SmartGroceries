@@ -6,7 +6,7 @@ const TopNavBar = () => {
   return (
     <>
       <br />
-      <div className="flex items-center justify-center z-[2147483647] w-[100vw]">
+      <div className="flex items-center justify-center z-[99999] w-[100vw]">
         <div className="fixed flex ">
           <div>
             <img

@@ -28,7 +28,7 @@ const HomePage = () => {
     <>
       <div>
         <br />
-        <div className="bg-[azure] w-[100vw]">
+        <div className="bg-[azure] w-[100vw] z-[99999]">
           <TopNavBar />
         </div>
         <div>

@@ -20,15 +20,15 @@
     color: #181725;
 }
 
-.text2{
+.text2 {
     font-size: 16px;
     line-height: 137%;
     letter-spacing: 0.01em;
     text-align: center;
-    color: grey; 
+    color: grey;
 }
 
-.textPrice{
+.textPrice {
     font-weight: 700;
     font-size: 16px;
     line-height: 137%;
@@ -42,7 +42,7 @@
     align-items: center;
 }
 
-.inStock{
+.inStock {
     color: rgb(1, 6, 1);
     background-color: rgb(27, 212, 18);
     font-size: medium;
@@ -58,9 +58,11 @@
     font-weight: 500;
 
     border-radius: 0px 18px 0px 0px;
+
+    z-index: 0;
 }
 
-.outStock{
+.outStock {
     color: rgb(1, 6, 1);
     background-color: rgb(212, 18, 18);
     font-size: medium;
@@ -76,4 +78,6 @@
     font-weight: 500;
 
     border-radius: 0px 18px 0px 0px;
+
+    z-index: 0;
 }
